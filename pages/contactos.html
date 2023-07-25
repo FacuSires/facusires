@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="shortcut icon" href="../multimedia/img/Logo BN.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="navegador">
+            <img class="logo" src="../multimedia/img/Logo BN.jpg" alt="">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contactos.html">Contactos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./horarios.html">Horarios</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="#info-contactos">Info contactos</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion-mapa">
+            <form class="form-contacto" action="">
+                <div>
+                    <h1 class="titulo-contacto">Contacto</h1>
+                    <br>
+                    <p class="parrafo-contacto">Completa el formulario y nos comunicaremos a la brevedad.</p>
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="ingrese su email" maxlength="30" required>
+                    <br>
+                    <br>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="ingrese su telefono" maxlength="10"
+                        required>
+                    <br>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="ingrese un mensaje" cols="30"
+                        rows="10"></textarea>
+                    <br>
+                    <br>
+                    <button class="boton" type="submit">enviar</button>
+                    <button class="boton" type="reset">resetear</button>
+                </div>
+            </form>
+        </section>
+        <section class="seccion-mapa">
+            <div>
+                <h3 class="subtitulo-ubicacion">Ubicacion</h3>
+                <p class="parrafo-ubicacion">Direccion: Pedro Medrano 3343, Los Polvorines.</p>
+            </div>
+            <div>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9874375406293!2d-58.409995423664185!3d-34.604479172953944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9f841ad7d9%3A0x8d1edf78e4abf652!2sNeicha%20Argentina!5e0!3m2!1ses!2sar!4v1687942842380!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <div id="info-contactos">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt consectetur fugiat a ab,
+                ipsam corporis odit est, ullam animi suscipit. Nemo voluptatem, ducimus iste ullam quam perferendis
+                minus dolore.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, iure quibusdam accusamus cum minus
+                explicabo soluta architecto est neque laudantium velit sequi beatae.</p>
+        </div>
+        <div id="info-contactos">
+            <h2>Info contactos</h2>
+            <p>Direccion: Pedro Medrano 3343, Los Polvorines</p>
+            <p>Tel: 1123456789</p>
+            <p>Mail: pestañasnaza@gmail.com</p>
+        </div>
+        <div id="redes">
+            <a href="https://www.instagram.com/" target="_blank"> <img class="logo-redes"
+                    src="../multimedia/img/instagram(logo).png" alt="logo de instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"> <img class="logo-redes"
+                    src="../multimedia/img/facebook(logo).png" alt="logo de facebook"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Des" target="_blank"> <img
+                    class="logo-redes" src="../multimedia/img/twitter(logo).png" alt="logo de twitter"></a>
+        </div>
+        <div class="logo-whatsapp">
+            <a
+                href="https://api.whatsapp.com/send?phone=+5491135076307&text=Hola,%20estoy%20interesado%20en%20tu%20producto"><img
+                    class="whatsapp" src="../multimedia/img/whatsapp(logo).png" alt="logo de whatsapp">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

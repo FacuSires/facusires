@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo-principal{
+    color: rgba(243, 129, 243, 0.76);
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0px 0px ;
+}
+.navegador{
+    background-color: rgb(206, 130, 181);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+.navegador .logo{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    padding:7px;
+}
+.navegador ul{
+    list-style-type: none;
+    display: flex;
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 10px 15px;
+}
+.navegador .fa-bars{
+    display: none;
+}   
+@media(max-width:768px){
+    .navegador .fa-bars{
+        display: block;
+        margin: 15px;
+        font-size: 30px;
+        color: white;
+        order: -1;
+    }
+    .navegador .fa-bars:hover + ul {
+        left: 0;
+    }
+    .navegador ul {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .navegador .ul:hover{
+        left: 0;
+    }
+    .navegador ul li a{
+        color: black;
+    }
+}
+.encabezado{
+    margin-top: 64px;
+}
+.banner-titulo{
+    background-image: url(../multimedia/img/banner\ pestañas\ 4.jpg);
+    height: 500px;
+    width: 1200px;
+    object-fit: cover;
+    align-content: center;
+    margin: 0% 20% 0%;
+    display: flex;
+    align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+@media(max-width:1200px){
+    .banner-titulo{
+        width: 100%;
+        height: 500px;
+        margin-left: 0;
+    }
+}
+/*..........................fin header, nav y h1.....................*/
+/*.............................tarjeta y main..........................*/
+
+.subtitulo-servicios{
+    color: fuchsia;
+    font-size: 40px;
+    padding: 0px 30px;
+}
+.parrafo-de-servicios{
+    color: rgb(206, 130, 181);
+    font-size: 20px;
+    text-align: center;
+   padding: 20px;
+}
+.imagen-pestañas{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7%;
+}
+.seccion-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 100px;
+}
+.tarjeta{
+    width: 350px;
+    height: auto;
+    border: 5px solid rgba(255,212,255,0.76);
+    border-radius: 7%;
+    box-shadow: 9px 9px 11px 9px rgba(255,212,255,0.76);
+    padding: 10px;
+    margin: 10px;
+    background-image: url(../multimedia/img/fondo\ de\ tarjetas.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta:hover{
+
+}
+.tarjeta h3{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(230, 110, 235);
+}
+.boton{
+    width: 100px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 75, 240) ;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+/*..................................footer(pie de pagina)......................*/
+
+.pie-de-pagina{
+    background-color: rgba(240, 236, 236, 0.404);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+.pie-de-pagina #info-contactos h2{
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+.pie-de-pagina #info-contactos p{
+    font-size: 20px;
+    padding: 3px;
+    margin: 10px;
+}
+.pie-de-pagina #redes .logo-redes{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    padding: 7px;
+}
+.pie-de-pagina .logo-whatsapp{
+    position: fixed;
+    width: 73px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(26, 196, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    box-shadow: 7px 7px 10px -1px #84FF75;
+}
+.pie-de-pagina .logo-whatsapp .whatsapp{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+
+}
+@media(max-width:768px){
+    .pie-de-pagina{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:576px){
+        .pie-de-pagina{
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+}
+/*..........................main y formulario de contacto/mapa...............*/
+.form-contacto .parrafo-contacto{
+    font-size: 19px;
+    color: rgb(240, 75, 240);
+}
+.form-contacto{
+    color: rgb(240, 75, 240);
+    border: 5px solid;
+    margin: 15px 23%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; 
+    width: 1050px;
+}
+.form-contacto input{
+    width: 240px;
+    border: 0px;
+    border-bottom: 2px solid rgb(240, 75, 240);
+}
+@media(max-width:1200px){
+    .form-contacto{
+        width: 450px;
+    }
+}
+.subtitulo-ubicacion{
+    color: rgb(240, 75, 240);
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+.parrafo-ubicacion{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.seccion-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:1200px){
+    .seccion-mapa{
+        display: flex;
+        flex-flow: column;
+    }
+    .mapa{
+        width: 450px;
+    }
+}
+/*...........................nosotros main y razones.......................*/
+.imagen-nosotros{
+    width: 600px;
+}
+.descripcion-nosotros{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.subtitulo-razones{
+    margin: 10px;
+    font-size: 28px;
+}
+.razones li{
+    font-size: 20px;
+    margin: 40px;
+    padding: 1px;
+    list-style-type: square;
+}
+/*............................horarios y precios.......................*/
+.titulo-horarios{
+    font-size: 40px;
+    color: rgb(240, 75, 240);
+    padding: 5px;
+    margin: 10px;
+}
+.subtitulo-precios{
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;
+}
+.tabla-precios{
+    border:5px solid rgb(240, 75, 240);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.precios{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: square;
+}
+.titulo-tabla-de-horarios{
+    color: rgb(240, 75, 240);
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+.tabla-horarios{
+    border: 5px solid rgb(240, 75, 240);
+    width: 80%;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+tr{
+    text-align: center;
+}
+/*................................GRID PRODUCTOS...................*/
+.principal{
+    display: flex;
+    flex-direction: row;
+}
+.seccion-cat{
+    margin-left: 15%;
+}
+.seccion-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 10px;
+}
+.seccion-productos .subtitulos{
+    color: fuchsia;
+    font-size: 30px;
+    padding: 0px 30px;
+    width: 100%;
+}
+@media(max-width:1200px){
+    .seccion-cat{
+        margin-left: 10px;
+    }
+}
+.tarjetaP{
+    width: 350px;
+    height: auto;
+    border: 5px solid rgba(255,212,255,0.76);
+    border-radius: 7%;
+    box-shadow: 9px 9px 11px 9px rgba(255,212,255,0.76);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.tarjetaP h4{
+    margin: 10px;
+    font-size: 20px;
+    
+}
+.img-producto{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7%;
+}
+.categorias{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+    width: 100%;
+}
+.categorias ul{
+    list-style-type: none;
+}
+.categorias ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px 15px;
+}
+.principal h3{
+    font-size: 20px;
+}
+.sub-categoria{
+    color: rgba(241, 174, 241, 0.76);
+    margin-top: 50px;
+}
