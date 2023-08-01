@@ -331,20 +331,32 @@
 tr{
     text-align: center;
 }
-/*................................GRID PRODUCTOS...................*/
+/*................................GRID PRODUCTOS...............................*/
 .principal{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media(max-width: 768px){
+    .principal{
+        flex-direction: column;
+    }
+    .seccion-cat{
+        width: 100%;
+    }
 }
 .seccion-cat{
-    margin-left: 15%;
+    width: 30%;
 }
 .seccion-productos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
-    margin: 20px 10px;
+    margin: 20px;
 }
 .seccion-productos .subtitulos{
     color: fuchsia;
@@ -358,7 +370,7 @@ tr{
     }
 }
 .tarjetaP{
-    width: 350px;
+    width: 300px;
     height: auto;
     border: 5px solid rgba(255,212,255,0.76);
     border-radius: 7%;
@@ -368,8 +380,12 @@ tr{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
+}
+.tarjetaP h3 {
+    margin: 10px;
+    font-size: 20px;
 }
 .tarjetaP h4{
     margin: 10px;
@@ -377,20 +393,28 @@ tr{
     
 }
 .img-producto{
-    width: 300px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 7%;
+}
+.subtitulos {
+    color: fuchsia;
+    font-size: 30px;
+    padding: 0px 30px;
+    text-align: center; /* Centramos el texto de las categorías */
+    margin-bottom: 10px; /* Ajustamos el margen inferior para dispositivos móviles */
 }
 .categorias{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction:column;
-    align-items: end;
-    width: 100%;
+    align-items: flex-start;
+    padding: 10px;
 }
 .categorias ul{
     list-style-type: none;
+    padding: 0;
 }
 .categorias ul li a{
     text-decoration: none;
