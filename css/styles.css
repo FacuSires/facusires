@@ -5,7 +5,7 @@
 }
 .titulo-principal{
     color: rgba(243, 129, 243, 0.76);
-    font-size: 36px;
+    font-size: 50px;
     text-align: center;
     margin: 20px 0px 0px ;
 }
@@ -39,6 +39,10 @@
     display: none;
 }   
 @media(max-width:768px){
+    .titulo-principal {
+        font-size: 36px;
+        margin: 10px 0px 0px;
+    }
     .navegador .fa-bars{
         display: block;
         margin: 15px;
@@ -89,9 +93,16 @@
 @media(max-width:1200px){
     .banner-titulo{
         width: 100%;
-        height: 500px;
+        height: 700px;
         margin-left: 0;
     }
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 /*..........................fin header, nav y h1.....................*/
 /*.............................tarjeta y main..........................*/
@@ -231,7 +242,7 @@
 }
 @media(max-width:1200px){
     .form-contacto{
-        width: 450px;
+        width: 400px;
     }
 }
 .subtitulo-ubicacion{
@@ -256,7 +267,7 @@
         flex-flow: column;
     }
     .mapa{
-        width: 450px;
+        width: 370px;
     }
 }
 /*...........................nosotros main y razones.......................*/
