@@ -1,0 +1,41 @@
+.seccion-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width:1200px) {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .form-contacto {
+        color: $rosa-color-general;
+        border: 5px solid;
+        margin: 15px 23%;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 1050px;
+
+        .titulo-contacto {
+            color: $rosa-color-general;
+        }
+
+        .parrafo-contacto {
+            font-size: 19px;
+            color: $rosa-color-general;
+        }
+
+        input {
+            width: 240px;
+            border: 0px;
+            border-bottom: 2px solid $rosa-color-general;
+        }
+
+        @media(max-width:1200px) {
+            width: 400px;
+        }
+    }
+}

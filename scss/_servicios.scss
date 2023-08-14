@@ -1,0 +1,49 @@
+.subtitulo-servicios {
+    color: fuchsia;
+    font-size: 40px;
+    padding: 0px 30px;
+}
+
+.parrafo-de-servicios {
+    color: $bg-color;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.seccion-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 100px;
+
+    .tarjeta {
+        width: 350px;
+        height: auto;
+        border: 5px solid rgba(255, 212, 255, 0.76);
+        border-radius: 7%;
+        box-shadow: $sombra;
+        padding: 10px;
+        margin: 10px;
+        background-image: url(../multimedia/img/fondo\ de\ tarjetas.jpg);
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h3 {
+            font-size: 40px;
+            text-align: center;
+            color: rgb(230, 110, 235);
+        }
+
+        .imagen-pestañas {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 7%;
+        }
+    }
+}

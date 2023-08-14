@@ -1,0 +1,47 @@
+.titulo-horarios {
+    font-size: 40px;
+    color: $rosa-color-general;
+    padding: 5px;
+    margin: 10px;
+}
+
+.tabla-precios {
+    border: 5px solid $rosa-color-general;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+
+    .subtitulo-precios {
+        color: $rosa-color-general;
+        font-size: 30px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .precios {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        list-style-type: square;
+    }
+}
+
+.titulo-tabla-de-horarios {
+    color: $rosa-color-general;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tabla-horarios {
+    border: 5px solid $rosa-color-general;
+    width: 80%;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    tr {
+        text-align: center;
+    }
+}

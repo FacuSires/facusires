@@ -1,0 +1,43 @@
+.pie-de-pagina {
+    background-color: rgba(240, 236, 236, 0.404);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+    @media(max-width:768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width:576px) {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+
+
+    #info-contactos {
+        h2 {
+            font-size: 40px;
+            padding: 10px;
+            margin: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            font-size: 20px;
+            padding: 3px;
+            margin: 10px;
+        }
+    }
+
+    #redes {
+        .logo-redes {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            padding: 7px;
+        }
+    }
+
+}

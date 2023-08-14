@@ -1,0 +1,29 @@
+.seccion-mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width:1200px) {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .subtitulo-ubicacion {
+        color: $rosa-color-general;
+        font-size: 30px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .parrafo-ubicacion {
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media(max-width:1200px) {
+    .mapa {
+        width: 370px;
+    }
+}
