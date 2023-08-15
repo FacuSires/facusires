@@ -1,8 +1,11 @@
-.titulo-horarios {
-    font-size: 40px;
-    color: $rosa-color-general;
-    padding: 5px;
-    margin: 10px;
+.encabezado-horarios {
+    .titulo-horarios {
+        font-size: 40px;
+        color: $rosa-color-general;
+        padding: 5px;
+        margin: 55px;
+        margin-bottom: 20px;
+    }
 }
 
 .tabla-precios {

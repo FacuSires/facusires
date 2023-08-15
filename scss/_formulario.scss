@@ -1,7 +1,15 @@
+.encabezado-contacto{
+    .titulo-principal{
+        margin-top: 60px;
+        color: $rosa-color-general;
+        font-size: 45px;
+    }
+}
 .seccion-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 
     @media(max-width:1200px) {
         display: flex;
