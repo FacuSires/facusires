@@ -11,7 +11,7 @@
 }
 
 .encabezado {
-    margin-top: 64px;
+    margin-top: 41px;
 
     .navegador {
         background-color: $bg-color;
@@ -22,6 +22,7 @@
         width: 100%;
         top: 0px;
         z-index: 9999;
+        background-image: linear-gradient(0deg, rgb(240, 75, 240), rgb(233, 195, 220));
 
         .fa-bars {
             display: none;
