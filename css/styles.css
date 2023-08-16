@@ -405,7 +405,7 @@
 
 .tabla-horarios {
   border: 5px solid rgb(240, 75, 240);
-  width: 80%;
+  width: 100%;
   font-size: 20px;
   margin: 10px;
   padding: 10px;
@@ -413,6 +413,11 @@
 }
 .tabla-horarios tr {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .tabla-horarios tr {
+    font-size: 15px;
+  }
 }
 
 .contenedor-principal {
