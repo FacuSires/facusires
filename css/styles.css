@@ -207,6 +207,9 @@
   object-fit: cover;
   border-radius: 7%;
 }
+.seccion-tarjetas .tarjeta p {
+  font-size: 15px;
+}
 
 .pie-de-pagina {
   background-color: rgba(240, 236, 236, 0.404);
@@ -344,10 +347,23 @@
 .encabezado-nosotros {
   height: 250px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .encabezado-nosotros {
+    height: 170px;
+  }
 }
 .encabezado-nosotros .imagen-nosotros {
   width: 500px;
   margin-top: 45px;
+}
+@media (max-width: 768px) {
+  .encabezado-nosotros .imagen-nosotros {
+    width: 100%;
+  }
 }
 
 .descripcion-nosotros {
@@ -396,27 +412,29 @@
   list-style-type: square;
 }
 
-.titulo-tabla-de-horarios {
+.horarios {
+  display: flex;
+  flex-direction: column;
+}
+.horarios .titulo-tabla-de-horarios {
   color: rgb(240, 75, 240);
   font-size: 30px;
   margin: 10px;
   padding: 10px;
 }
-
-.tabla-horarios {
+.horarios .tabla-horarios {
   border: 5px solid rgb(240, 75, 240);
-  width: 100%;
   font-size: 20px;
   margin: 10px;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
 }
-.tabla-horarios tr {
+.horarios .tabla-horarios tr {
   text-align: center;
 }
 @media (max-width: 768px) {
-  .tabla-horarios tr {
-    font-size: 15px;
+  .horarios .tabla-horarios tr {
+    font-size: 12px;
   }
 }
 
@@ -455,8 +473,8 @@
 .contenedor-principal .principal .seccion-cat .categorias {
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 10px;
 }
 .contenedor-principal .principal .seccion-cat .categorias .sub-categoria {
@@ -476,6 +494,7 @@
 @media (max-width: 768px) {
   .contenedor-principal .principal .seccion-cat .categorias ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }
@@ -489,6 +508,7 @@
 .seccion-productos {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   gap: 20px;
   margin: 20px;
@@ -512,8 +532,9 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
+  align-items: center;
 }
 .seccion-productos .tarjetaP .img-producto {
   width: 100%;
