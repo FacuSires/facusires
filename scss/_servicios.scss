@@ -1,7 +1,12 @@
 .subtitulo-servicios {
     color: fuchsia;
     font-size: 40px;
-    padding: 0px 30px;
+    padding: 20px 30px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translate(9px, -9px);
+    }
 }
 
 .parrafo-de-servicios {
@@ -22,7 +27,7 @@
         width: 350px;
         height: auto;
         border: 5px solid rgba(255, 212, 255, 0.76);
-        border-radius: 7%;        
+        border-radius: 7%;
         padding: 10px;
         margin: 10px;
         background-image: url(../multimedia/img/fondo\ de\ tarjetas2.jpg);
@@ -32,6 +37,7 @@
         flex-wrap: wrap;
         justify-content: center;
         transition: box-shadow 0.3s, transform 0.3s;
+
         &:hover {
             box-shadow: $sombra;
             transform: translateY(-7px);
@@ -49,10 +55,11 @@
             object-fit: cover;
             border-radius: 7%;
         }
+
         p {
             font-weight: bolder;
             font-size: 15px;
-            color: rgb(224, 92, 169) ;
+            color: rgb(224, 92, 169);
         }
     }
 }

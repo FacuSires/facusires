@@ -29,11 +29,21 @@
 
         .titulo-contacto {
             color: $rosa-color-general;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translate(9px, -9px);
+            }
         }
 
         .parrafo-contacto {
             font-size: 19px;
             color: $rosa-color-general;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translate(9px, -9px);
+            }
         }
 
         input {

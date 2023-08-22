@@ -14,6 +14,7 @@
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  transition: 200ms;
 }
 .boton:hover {
   background-color: rgb(240, 125, 234);
@@ -165,7 +166,11 @@
 .subtitulo-servicios {
   color: fuchsia;
   font-size: 40px;
-  padding: 0px 30px;
+  padding: 20px 30px;
+  transition: 0.3s;
+}
+.subtitulo-servicios:hover {
+  transform: translate(9px, -9px);
 }
 
 .parrafo-de-servicios {
@@ -315,10 +320,18 @@
 }
 .seccion-form .form-contacto .titulo-contacto {
   color: rgb(240, 75, 240);
+  transition: 0.3s;
+}
+.seccion-form .form-contacto .titulo-contacto:hover {
+  transform: translate(9px, -9px);
 }
 .seccion-form .form-contacto .parrafo-contacto {
   font-size: 19px;
   color: rgb(240, 75, 240);
+  transition: 0.3s;
+}
+.seccion-form .form-contacto .parrafo-contacto:hover {
+  transform: translate(9px, -9px);
 }
 .seccion-form .form-contacto input {
   width: 240px;
@@ -388,16 +401,24 @@
   padding: 10px;
 }
 
-.subtitulo-razones {
+.list-razones .subtitulo-razones {
   margin: 10px;
   font-size: 28px;
+  color: rgb(240, 75, 240);
+  transition: 0.3s;
 }
-
-.razones li {
+.list-razones .subtitulo-razones:hover {
+  transform: translate(7px, -7px);
+}
+.list-razones .razones li {
   font-size: 20px;
   margin: 40px;
   padding: 1px;
   list-style-type: square;
+  transition: 0.3s;
+}
+.list-razones .razones li:hover {
+  transform: translate(9px, -9px);
 }
 
 .encabezado-horarios .titulo-horarios {
@@ -419,12 +440,23 @@
   font-size: 30px;
   margin: 10px;
   padding: 5px;
+  transition: 0.3s;
+}
+.tabla-precios .subtitulo-precios:hover {
+  transform: translate(9px, -9px);
 }
 .tabla-precios .precios {
   font-size: 20px;
   margin: 10px;
   padding: 10px;
   list-style-type: square;
+}
+.tabla-precios .precios li {
+  margin: 10px;
+  transition: 0.3s;
+}
+.tabla-precios .precios li:hover {
+  transform: translate(9px, -9px);
 }
 
 .horarios {
@@ -436,6 +468,10 @@
   font-size: 30px;
   margin: 10px;
   padding: 10px;
+  transition: 0.3s;
+}
+.horarios .titulo-tabla-de-horarios:hover {
+  transform: translate(9px, -9px);
 }
 .horarios .tabla-horarios {
   border: 5px solid rgb(240, 75, 240);
@@ -495,6 +531,10 @@
 .contenedor-principal .principal .seccion-cat .categorias .sub-categoria {
   color: rgba(241, 174, 241, 0.76);
   margin-top: 50px;
+  transition: 0.3s;
+}
+.contenedor-principal .principal .seccion-cat .categorias .sub-categoria:hover {
+  transform: translate(9px, -9px);
 }
 @media (max-width: 768px) {
   .contenedor-principal .principal .seccion-cat .categorias .sub-categoria {
@@ -519,6 +559,10 @@
   color: rgb(0, 0, 0);
   display: block;
   padding: 10px 15px;
+  transition: 0.3s;
+}
+.contenedor-principal .principal .seccion-cat .categorias ul li a:hover {
+  transform: translate(9px, -9px);
 }
 
 .seccion-productos {
