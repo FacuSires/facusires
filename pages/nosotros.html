@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -33,6 +34,78 @@
         <img class="imagen-nosotros" src="../multimedia/img/posible subtitulo(nosotras).webp" alt="banner nosotros">
     </header>
     <main>
+
+
+        <div class="wrapper">
+            <h1 class="titulo-principal">Nosotros nos destacamos por...</h1>
+            <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container " data-aos="zoom-out-down" data-aos-offset="200">
+                        <div class="front " style="background-image: url(../multimedia/img/pestaña\ nosotros2.jpg)">
+                            <div class="inner">
+                                <p>Experiencia Profesional</p>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Con años de experiencia en el campo, nuestro equipo de expertos en belleza de pestañas garantiza resultados de calidad que realzan tu mirada y resaltan tu belleza natural.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container " data-aos="zoom-out-down" data-aos-offset="200">
+                        <div class="front " style="background-image: url(../multimedia/img-servicios/Lifting\ pestañas.webp)">
+                            <div class="inner">
+                                <p>Dedicacion a la belleza</p>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Estamos dedicados a potenciar tu belleza única. Nuestros servicios de pestañas están diseñados para resaltar tus rasgos y hacer que te sientas aún más hermosa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container " data-aos="zoom-out-down" data-aos-offset="200">
+                        <div class="front " style="background-image: url(../multimedia/img/pestaña\ colores2.jpg)">
+                            <div class="inner">
+                                <p>Transformacion Personalizada</p>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Creemos en la belleza personalizada. Trabajamos contigo para lograr resultados que se adapten a tu estilo y personalidad, realzando tu expresión única.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container " data-aos="zoom-out-down" data-aos-offset="200">
+                        <div class="front " style="background-image: url(../multimedia/img/modelo\ de\ decoracion.jpg);">
+                            <div class="inner">
+                                <p>Comodidad</p>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p> Tu comodidad es fundamental. En nuestro salón, te ofrecemos un ambiente relajado y acogedor, para que te sientas cómoda mientras te mimamos con nuestros servicios de belleza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+
         <p class="descripcion-nosotros">Somos un equipo de amantes de la belleza con una pasión compartida: realzar tu
             mirada de manera única y auténtica. Nuestro enfoque en servicios de pestañas y cejas refleja nuestra
             dedicación en perfeccionar cada detalle. A medida que te sumerges en nuestro mundo, descubrirás que cada
@@ -103,6 +176,12 @@
             </a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- link AOS -->
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script><!-- script para que no vuelvan a desaparecer -->
 </body>
 
 </html>
