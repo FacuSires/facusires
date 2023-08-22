@@ -38,6 +38,10 @@
             height: 64px;
             object-fit: cover;
             padding: 7px;
+            transition: 0.3s;
+            &:hover {
+                transform: translateY(-7px);
+            }
         }
     }
 

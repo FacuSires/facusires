@@ -22,16 +22,20 @@
         width: 350px;
         height: auto;
         border: 5px solid rgba(255, 212, 255, 0.76);
-        border-radius: 7%;
-        box-shadow: $sombra;
+        border-radius: 7%;        
         padding: 10px;
         margin: 10px;
-        background-image: url(../multimedia/img/fondo\ de\ tarjetas.jpg);
+        background-image: url(../multimedia/img/fondo\ de\ tarjetas2.jpg);
         background-size: cover;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        transition: box-shadow 0.3s, transform 0.3s;
+        &:hover {
+            box-shadow: $sombra;
+            transform: translateY(-7px);
+        }
 
         h3 {
             font-size: 40px;
@@ -46,7 +50,9 @@
             border-radius: 7%;
         }
         p {
+            font-weight: bolder;
             font-size: 15px;
+            color: rgb(224, 92, 169) ;
         }
     }
 }

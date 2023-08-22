@@ -12,6 +12,10 @@
     right: 30px;
     z-index: 2;
     box-shadow: 7px 7px 10px -1px #84FF75;
+    transition: 0.3s;
+            &:hover {
+                transform: translateY(-7px);
+            }
 
     .whatsapp {
         width: 64px;
