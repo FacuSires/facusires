@@ -8,6 +8,7 @@
 
 .seccion-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -26,11 +27,13 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 1050px;
+        width: 900px;
+        text-align: center;
 
         .titulo-contacto {
             color: $rosa-color-general;
             transition: 0.3s;
+            text-align: center;
 
             &:hover {
                 transform: translate(9px, -9px);
@@ -41,6 +44,7 @@
             font-size: 19px;
             color: $rosa-color-general;
             transition: 0.3s;
+            text-align: center;
 
             &:hover {
                 transform: translate(9px, -9px);
@@ -49,8 +53,9 @@
 
         input {
             width: 240px;
-            border: 0px;
+            border: 0;
             border-bottom: 2px solid $rosa-color-general;
+            text-align: center;
         }
 
         @media(max-width:1200px) {
