@@ -287,7 +287,7 @@
 .logo-whatsapp {
   position: fixed;
   width: 63px;
-  height: 65px;
+  height: 63px;
   border-radius: 50%;
   text-align: center;
   background-color: rgb(26, 196, 26);
@@ -303,13 +303,13 @@
 @media (max-width: 1400px) {
   .logo-whatsapp {
     width: 53px;
-    height: 55px;
+    height: 53px;
   }
 }
 @media (max-width: 576px) {
   .logo-whatsapp {
     width: 53px;
-    height: 55px;
+    height: 53px;
   }
 }
 .logo-whatsapp:hover {
@@ -329,13 +329,13 @@
 @media (max-width: 1400px) {
   .logo-whatsapp .whatsapp {
     width: 53px;
-    height: 55px;
+    height: 53px;
   }
 }
 @media (max-width: 576px) {
   .logo-whatsapp .whatsapp {
     width: 53px;
-    height: 55px;
+    height: 53px;
   }
 }
 
@@ -434,11 +434,6 @@
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 768px) {
-  .encabezado-nosotros {
-    height: 170px;
-  }
-}
 .encabezado-nosotros .imagen-nosotros {
   width: 500px;
   margin-top: 45px;
@@ -446,6 +441,13 @@
 @media (max-width: 768px) {
   .encabezado-nosotros .imagen-nosotros {
     width: 100%;
+    background-size: cover;
+  }
+}
+@media (max-width: 460px) {
+  .encabezado-nosotros .imagen-nosotros {
+    height: 150px;
+    object-fit: cover;
   }
 }
 

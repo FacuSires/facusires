@@ -1,7 +1,7 @@
 .logo-whatsapp {
     position: fixed;
     width: 63px;
-    height: 65px;
+    height: 63px;
     border-radius: 50%;
     text-align: center;
     background-color: rgb(26, 196, 26);
@@ -16,12 +16,12 @@
 
     @media(max-width:1400px) {
         width: 53px;
-        height: 55px;
+        height: 53px;
     }
 
     @media(max-width:576px) {
         width: 53px;
-        height: 55px;
+        height: 53px;
     }
 
     &:hover {
@@ -39,12 +39,12 @@
         }
         @media(max-width:1400px) {
             width: 53px;
-            height: 55px;
+            height: 53px;
         }
     
         @media(max-width:576px) {
             width: 53px;
-            height: 55px;
+            height: 53px;
         }
     }
 }
